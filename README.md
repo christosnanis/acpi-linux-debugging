@@ -30,6 +30,6 @@ grep -nEi 'OSI|Windows' *.dsl | grep -iE "Windows *"
 
 To test different configurations, you can specify certain ACPI defs in /etc/kernel/cmdline like for example:
 ```bash
-acpi_osi=!* acpi_osi="Windows 2001" acpi_osi="Windows 2006"
+acpi_osi="!*" acpi_osi="Windows 2001" acpi_osi="Windows 2006"
 # interpreted as: clear defaults and re-add 2001 and 2006 presets
 ```
